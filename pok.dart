@@ -1,4 +1,4 @@
-import "main.dart";
+import 'cat.dart';
 class Pokemons extends CategorieDA
 {
   int _nb_ep;
@@ -6,6 +6,7 @@ class Pokemons extends CategorieDA
   Pokemons({required int nbe ,required int nbs, required int id, String? desc}
       ):
         _nb_ep=nbe,_nb_saison=nbs, super(id: id,desc: desc) ;
+
 
   void set setnb_ep(int c)=> _nb_ep=c;
   int get getnb_ep => _nb_ep;
